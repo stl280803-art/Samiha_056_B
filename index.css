@@ -1,0 +1,335 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.totalcontainer{
+    width: 100%;
+    min-height: 100vh;
+    background-color:#000000;
+}
+
+html { scroll-behavior: smooth; }
+
+/* ===================== Navbar ===================== */
+
+.navbar {
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 60px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.85), transparent);
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.logo-text {
+    font-family: 'Host Grotesk', sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    color: rgba(255,255,255,0.85);
+    letter-spacing: 1px;
+}
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.navbar-links a {
+    font-family: 'Host Grotesk', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.85);
+    transition: color 0.2s;
+    text-decoration: none;
+}
+.navbar-avatar {
+    width: 38px;
+    height: 38px;
+}
+
+/* ===================== Navbar end ===================== */
+
+/* ===================== Hero section ===================== */
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.hero-bg {
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(to bottom, 
+        rgba(0, 0, 0, 0.514) 0%, 
+        rgba(0, 0, 0, 0.589) 60%, 
+        rgba(0, 0, 0, 0.959) 100%),
+        url('../Image/image\ 2.png') center/cover no-repeat;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-sub {
+    font-family: 'Host Grotesk', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: rgba(255,255,255,0.85);
+    margin-top: 24px;
+    line-height: 1.7;
+    max-width: 560px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin-top: 36px;
+}
+
+/* ===================== Hero end ===================== */
+
+/* ===================== Button  ===================== */
+
+.btn-outline {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 32px;
+    border: 1.5px solid  #A81E30;
+    background: transparent;
+    color: white;
+    font-family: 'Host Grotesk', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-radius: 4px;
+}
+
+
+.btn-solid {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 32px;
+    border: 1.5px solid white;
+    background: white;
+    color: rgb(0, 0, 0);
+    font-family: 'Host Grotesk', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-radius: 4px;
+}
+
+/* ===================== Button end ===================== */
+
+/* ===================== Section label ===================== */
+
+.section-label {
+    font-family: 'Anton', sans-serif;
+    font-size: 56px;
+    font-weight: 200;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 60px;
+    color: white;
+}
+
+/* ===================== Section end ===================== */
+
+/* ===================== Signatrure items ===================== */
+
+.signature {
+    background: black;
+    padding: 100px 60px;
+}
+
+.sig-item {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    max-width: 1000px;
+    margin: 0 auto 50px;
+}
+
+.sig-item.reverse { flex-direction: row-reverse; }
+
+.sig-text { flex: 1; }
+
+.sig-text h2 {
+    font-family: 'Anton', sans-serif;
+    font-size: 62px;
+    font-weight: 200;
+    text-transform: uppercase;
+    line-height: 1;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.sig-text p {
+    font-family: 'Host Grotesk', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: white;
+    line-height: 1.8;
+    max-width: 380px;
+    margin-bottom: 32px;
+}
+
+.sig-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.sig-image img {
+    max-width: 100%;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 4px;
+}
+
+.btn-small {
+     display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 32px;
+    border: 1.5px solid  #ffffff;
+    background: transparent;
+    color: white;
+    font-family: 'Host Grotesk', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-radius: 4px;
+}
+
+/* ===================== Signatrure items end ===================== */
+
+/* ===================== Our menu ===================== */
+
+.menu-section {
+    position: relative;
+    background:
+        linear-gradient(to bottom, 
+        rgba(0,0,0,0.6), 
+        rgba(0,0,0,0.7)),
+        url(../Image/Image\ 3.png) center/cover fixed;
+    padding: 120px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-card{
+    width: 450px;
+    height: 400px;
+    background: #f3f0e8;
+    padding: 45px 35px;
+    position: relative;
+    text-align: center;
+}
+
+.menu-card::before,
+.menu-card::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 12px;
+
+    background:
+    repeating-linear-gradient(
+        90deg,
+        #f3f0e8 0px,
+        #f3f0e8 12px,
+        transparent 12px,
+        transparent 20px
+    );
+}
+
+.menu-card::before{
+    top: -12px;
+}
+
+.menu-card::after{
+    bottom: -12px;
+}
+
+
+
+.menu-card h2 {
+    font-family: 'Host Grotesk', sans-serif;
+    font-size: 36px;
+    font-style: regular;
+    color: #2a2a2a;
+    margin-bottom: 24px;
+}
+
+.menu-open-btn {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ccc;
+    background: transparent;
+    font-family: 'Host Grotesk', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #444;
+    margin-bottom: 28px;
+}
+
+.menu-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    text-decoration: none;
+}
+
+.menu-tabs a {
+    font-family: 'Host Grotesk', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: #666;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 2px;
+    text-decoration: none;
+}
